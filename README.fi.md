@@ -198,9 +198,6 @@ Ei dokumentointia, ei vastuuhenkilöä, ei tarkistuksia.
 - Valtiokonttori käsittelee edelleen uhrien korvausvaatimuksia  
 - Tutkinta viittaa mahdollisiin lisäosallisiin kiristysvaiheessa  
 
-Laajempi tilannekuva löytyy täältä (englanninkielisessä versiossa):  
-🇬🇧 [README.md](README.md)
-
 ---
 
 ## **11. Yhteystiedot**
