@@ -1,6 +1,9 @@
 # Vastaamo-tietomurto: Incident Post-Mortem -raportti  
 ### Tekninen tapausanalyysi — Satu Ikola
 
+**🌐 Kieliversiot:**
+🇫🇮 Suomi | 🇬🇧 [English](README.md)
+
 ---
 
 ### Aiheita:  
