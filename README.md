@@ -209,9 +209,6 @@ No documentation, no ownership, no review process.
 - Victim compensation process ongoing via State Treasury  
 - Investigators exploring possible additional collaborators  
 
-For full details, see the Finnish report:  
-🇫🇮 [README.fi.md](README.fi.md)
-
 ---
 
 ## **11. Contact**
