@@ -207,7 +207,72 @@ Port opened for maintenance and forgotten.
 
 ---
 
-## 10. Contact
+## 10. Current Status (2025–2026) — Latest Developments in the Vastaamo Case
+
+This section summarizes the most recent developments in the Vastaamo data breach case as of late 2025 and early 2026, including legal proceedings, new suspects, compensation issues, and ongoing investigative angles.
+
+---
+
+### 🔎 Key New Developments
+
+| Topic | Description |
+|-------|-------------|
+| **New suspect: Patrick Newhard (USA)** | U.S. citizen Patrick Newhard has been charged with sending extortion emails related to the Vastaamo breach. He was extradited from Estonia to the United States and is suspected of assisting in aggravated extortion. |
+| **Kivimäki released from custody (Autumn 2025)** | Aleksanteri Kivimäki was released from detention in September 2025 pending the Court of Appeal’s final ruling. The District Court’s sentence of **6 years and 3 months** remains in force during the appeal. |
+| **Court of Appeal hearings concluded in late 2025** | The Helsinki Court of Appeal held its main hearings from 19 August to 26 November 2025. The final ruling will be issued **by 28 February 2026**. |
+| **Compensation process ongoing** | The Finnish State Treasury continues to process victim compensation claims. Several victim groups and law firms argue that the compensation levels do not adequately reflect the severity of the harm. |
+| **Potential broader criminal network** | The emergence of new suspects (e.g., Newhard) indicates that multiple individuals may have been involved in the extortion phase of the crime. Investigations continue internationally. |
+| **Vastaamo GDPR fine remains in effect** | The psychotherapy center’s administrative fine of **€608,000** was upheld due to severe data protection failures, insufficient logging, and security misconfigurations. |
+
+---
+
+### 🧭 Summary: What Is Final — What Remains Open
+
+#### ✔ Resolved
+- District Court sentence: **6 years 3 months imprisonment** (Kivimäki)  
+- **€608,000 GDPR fine** imposed on Vastaamo  
+- Confirmation of widespread leakage of psychotherapy records  
+- Considered the most severe privacy breach in Finland’s history
+
+#### ⏳ Pending / Ongoing
+- **Court of Appeal’s final decision by 28 February 2026**  
+- Possible additional suspects and charges related to extortion or assistance  
+- Assessment of the adequacy and scope of victim compensation  
+- Investigation into potential international collaborators  
+
+---
+
+### 🌐 Sources
+
+- Bitdefender — *US citizen charged in Vastaamo extortion case*  
+  https://www.bitdefender.com/en-us/blog/hotforsecurity/vastaamo-psychotherapy-hack-us-citizen-charged-in-latest-twist-of-notorious-data-breach
+
+- Databreaches.net — *Kivimäki walks free during appeal*  
+  https://databreaches.net/2025/09/11/kivimaki-walks-free-during-appeal-over-vastaamo-data-breach
+
+- Helsinki Court of Appeal — *Hearings concluded, ruling expected by 28 February 2026*  
+  https://tuomioistuimet.fi/hovioikeudet/helsinginhovioikeus/fi/index/tiedotteet/2025/paakasittelyvastaamo-asiassaalkaaelokuussa2025r241302.html
+
+- State Treasury of Finland — *Victims of the Vastaamo data breach*  
+  https://www.valtiokonttori.fi/en/services/services-related-to-compensation-and-accidents/vastaamo
+
+- EDPB — *GDPR sanction imposed on Vastaamo*  
+  https://www.edpb.europa.eu/news/national-news/2022/administrative-fine-imposed-psychotherapy-centre-vastaamo-data-protection_en
+
+- Have I Been Pwned — *Leaked data overview*  
+  https://haveibeenpwned.com/Breach/Vastaamo
+
+---
+
+### 📌 Short Summary
+
+The Vastaamo case remains an active and evolving cybercrime and legal matter.  
+The **Court of Appeal’s ruling in February 2026** is expected to determine the final legal responsibility and sentencing. At the same time, compensation processes, new suspects, and ongoing investigative developments keep the case relevant both legally and in the cybersecurity community.
+
+---
+
+
+## 11. Contact
 
 **Satu Ikola**  
 GitHub: https://github.com/SatuIkola  
