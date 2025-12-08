@@ -212,8 +212,6 @@ Ei dokumentointia, ei vastuuhenkilöä, ei tarkistuksia.
 
 ## 10. Ajankohtaista Vastaamo-tapauksesta (2025–2026)
 
-Tämä osio kokoaa yhteen tilanteen, joka koskee Vastaamo-tietomurtoa vuosien 2025–2026 vaihteessa, sisältäen uudet käänteet, oikeusprosessien etenemisen, korvausjärjestelyt sekä avoimet tutkimuslinjat.
-
 Tämä osio kokoaa yhteen Vastaamo-tapauksen ajankohtaisimmat käänteet vuosien 2025–2026 vaihteessa. Mukana ovat oikeusprosessin eteneminen, uudet syytteet, uhrien korvaukset ja avoimet tutkimuslinjat.
 
 ---
