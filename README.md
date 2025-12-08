@@ -1,93 +1,111 @@
+
 # Vastaamo Breach — Incident Post-Mortem Report  
 ### A Technical Case Study by Satu Ikola
 
 ---
 
+### **Topics:**  
+MySQL · Incident Response · Blue Team · SOC · Microsoft Sentinel · Microsoft Defender XDR · MITRE ATT&CK · Data Exfiltration · Threat Hunting · GDPR · Ransomware · Cybersecurity Governance
+
+---
+---
+
+## 📘 Table of Contents
+
+- [1. Executive Summary](#1-executive-summary)
+- [2. Timeline of Events](#2-timeline-of-events)
+- [3. Root Cause Analysis (RCA)](#3-root-cause-analysis-rca)
+- [4. MITRE ATTCK-Mapping](#4-mitre-attck-mapping)
+- [5. Attack Path Diagram](#5-attack-path-diagram)
+- [6. What Went Wrong (Defensive Failures)](#6-what-went-wrong-defensive-failures)
+- [7. Recommended Controls (Technical)](#7-recommended-controls-technical)
+- [8. Lessons Learned (Blue-Team--soc)](#8-lessons-learned-blue-team--soc)
+- [9. Business Impact](#9-business-impact)
+- [10. Contact](#10-contact)
+
+---
+
+
 ## 1. Executive Summary
 
 The Vastaamo breach (2017–2020) is one of the most severe cybersecurity incidents in Finnish history.  
-A forgotten and exposed database port, weak credentials, missing monitoring, and unencrypted psychotherapy records allowed attackers to exfiltrate and later publicly leak data of **33,000 patients**.
+A forgotten and publicly exposed database port, passwordless accounts, missing monitoring, and unencrypted psychotherapy records allowed attackers to exfiltrate and eventually leak data of **33,000 patients**.
 
 The breach resulted in:
 
 - The company’s **bankruptcy (2021)**
 - The CEO’s conviction for privacy violations
 - Over **20,000 criminal reports** from victims
-- A **6-year 3-month** prison sentence for the main attacker (2024)
+- A **6-year 3-month** prison sentence for the attacker (2024)
 
-This repository analyzes the incident from a SOC / Blue Team perspective, maps key actions to MITRE ATT&CK, and highlights both failures and actionable defensive measures.
+This report analyzes the incident from a SOC / Blue Team perspective, mapping the actions to MITRE ATT&CK and highlighting defensive failures and actionable lessons.
 
 ---
 
 ## 2. Timeline of Events
 
-### 2017-11 — Port 3306 opened
-A MySQL database port (3306) containing psychotherapy records is opened to the internet for maintenance and never closed.  
-It remains exposed for **around 16 months**.
+### **2017-11 — Port 3306 opened**
+MySQL database port opened for maintenance and left exposed for **16 months**.
 
-### 2017-12 — First unauthorized access
+### **2017-12 — First unauthorized access**
 Attacker gains access using weak credentials:
 - `username: vastaamo`
 - `password: zuukka66`
 - `root` account with **no password**
 
-### 2018-11 — 1 GB patient database exfiltrated
-Around 1 GB of patient records is transferred to an external VPN provider.  
-Due to lack of monitoring and logging, this goes completely unnoticed.
+### **2018-11 — 1 GB patient database exfiltrated**
+Approximately 1GB of psychotherapy records is transferred to an external VPN.  
+Due to lack of logging or monitoring, this remains undetected.
 
-### 2019-03-13 — Port 3306 finally closed
-The open port is discovered and closed after more than a year.
+### **2019-03-13 — Port closed**
+After 16 months of exposure, the port is finally shut.
 
-### 2019-03-15 — Database destroyed and ransom note
-Two days after the port is closed, the patient database is wiped and a ransom note is left demanding payment in cryptocurrency.
+### **2019-03-15 — Ransom attack**
+Two days later the database is wiped and a ransom message left demanding cryptocurrency.
 
-### 2020-09-28 — Blackmail messages sent
-The CEO and IT staff receive extortion messages indicating that patient records and personal identifiers will be sold and leaked.
+### **2020-09–10 — Blackmail & leak**
+- CEO and IT staff receive extortion messages  
+- The full patient database is published on the dark web  
+- Individual victims are directly blackmailed
 
-### 2020-10-23 — Full database leaked
-The full psychotherapy database is published on the dark web.  
-Individual patients also begin receiving blackmail messages directly.
-
-### 2023-02 — Main attacker arrested in France
-The suspect is arrested based on digital traces left during the data publication.
-
-### 2024-04 — Attacker sentenced
-The attacker is sentenced to **6 years and 3 months** in prison for aggravated data breach, extortion, and related crimes.
+### **2023–2024 — Arrest & sentencing**
+Attacker arrested (2023) and sentenced (2024) to 6 years 3 months.
 
 ---
 
 ## 3. Root Cause Analysis (RCA)
 
-### Security Misconfiguration
-- MySQL port 3306 exposed directly to the internet
-- Firewall misconfigured to effectively allow all traffic
-- `root` account without a password
+### **Security Misconfiguration**
+- MySQL port 3306 exposed publicly  
+- Firewall allowed unrestricted access  
+- `root` account had **no password**
 
-### Weak Access Control
-- Weak, guessable credentials
-- No multi-factor authentication
-- Poor privileged account hygiene and management
+### **Weak Access Control**
+- Static, guessable passwords  
+- No MFA  
+- Poor privileged account management
 
-### Lack of Logging and Monitoring
-- 1 GB data exfiltration not detected
-- No SIEM or alerting in place
-- No anomaly or behavior analytics on database access
+### **Lack of Logging & Monitoring**
+- 1GB data exfiltration undetected  
+- No SIEM correlation  
+- No outbound traffic anomaly detection  
+- No alerting on unusual database activity
 
-### Unencrypted Sensitive Data
-- Psychotherapy notes stored in plaintext
-- Direct violation of GDPR requirements for protection and minimisation of sensitive personal data
+### **Unencrypted Sensitive Data**
+- Psychotherapy notes stored in plaintext  
+- Direct GDPR violation
 
-### Governance and Process Failures
-- No clear owner for cybersecurity
-- No proper change management for exposing critical services
-- No tested incident response plan
-- Risk management treated as non-critical for business
+### **Governance Failures**
+- No single owner for cybersecurity  
+- No change management (port opened & forgotten)  
+- No incident response plan  
+- Minimal risk management despite sensitive data
+
 
 ---
 
 ## 4. MITRE ATT&CK Mapping
 
-See more details in [`mitre/mitre-mapping.md`](mitre/mitre-mapping.md).
 
 | Attack Phase        | Technique ID | Technique Name                          |
 |---------------------|-------------|-----------------------------------------|
@@ -124,104 +142,76 @@ More diagrams are available in the [`diagrams/`](diagrams) folder.
 
 ## 6. What Went Wrong (Defensive Failures)
 
-### 1. No SIEM or central monitoring
-- No alerts for abnormal data volume from the database
-- No detection of anomalous login locations or times
-- No correlation of events over a long dwell time
+### **1. No SIEM or monitoring**
+- No outbound anomaly detection  
+- No detection of mass downloads  
+- No indicator correlation  
+- No long-term intrusion detection
 
-### 2. No encryption of psychotherapy records
-- Highly sensitive mental health data stored in plaintext
-- Directly linkable to identifiable individuals
+### **2. No encryption**
+Psychotherapy notes stored in plaintext → directly linkable to victims.
 
-### 3. Poor identity and access management
-- Passwordless `root` account on a production database
-- Weak user password (`zuukka66`)
-- No enforced password policies or rotation
+### **3. Identity and access management failures**
+- Passwordless `root` account  
+- Weak static passwords  
+- No MFA
 
-### 4. No formal risk management
-- Critical production system left exposed for over a year
-- No systematic review of exposed services
+### **4. No risk management**
+Critical production services left exposed for over a year.
 
-### 5. No change management
-- Port opened “temporarily” and never closed
-- No tracked change request or rollback plan
+### **5. No change management**
+Port opened for maintenance and forgotten.
 
 ---
 
-## 7. Recommended Controls
+## 7. Recommended Controls (Technical)
 
-### Technical Controls
-- Close all unnecessary ports; never expose databases directly to the internet
-- Enforce strong password policies and multi-factor authentication
-- Encrypt all sensitive data at rest and in transit
-- Deploy a SIEM (e.g., Microsoft Sentinel) and enable alerting for:
-  - Unusual data access patterns
-  - Mass downloads from databases
-  - Logins from unusual locations or IP ranges
-- Apply network segmentation and the principle of least privilege
-- Regularly patch and harden database services and firewalls
-
-### Organisational Controls
-- Assign clear ownership for cybersecurity and data protection
-- Implement and test incident response and disaster recovery plans
-- Establish proper change management procedures
-- Perform regular risk assessments and GDPR compliance reviews
-- Provide ongoing security awareness training for staff and management
+- Close unnecessary ports; never expose databases publicly  
+- Enforce MFA and strong password policies  
+- Encrypt all sensitive data at rest and in transit  
+- Deploy Microsoft Sentinel or similar SIEM  
+- Enable alerts for:
+  - Unusual SQL queries  
+  - Large outbound transfers  
+  - Impossible travel logins  
+- Apply network segmentation  
+- Implement least privilege access
 
 ---
 
-## 8. Lessons Learned (Blue Team Perspective)
+## 8. Lessons Learned (Blue Team / SOC)
 
-Modern SOC tooling could have significantly reduced the impact:
+### **Microsoft Sentinel would have detected:**
+- Mass data exfiltration  
+- Anomalous query patterns  
+- Foreign IP logins  
+- Lateral movement / persistence  
 
-- **Microsoft Sentinel** could have detected:
-  - Mass data exfiltration from the database
-  - Anomalous login behaviour from foreign IP ranges
-  - Repeated access patterns indicative of long-term intrusion
+### **Defender XDR would have surfaced:**
+- Passwordless admin accounts  
+- Suspicious processes/backdoors  
+- Cross-domain correlation (identity + network + endpoint)
 
-- **Microsoft Defender XDR** could have:
-  - Flagged passwordless administrative accounts
-  - Alerted on suspicious processes and backdoor tooling
-  - Helped correlate signals from endpoints, identities and network
-
-The Vastaamo breach is a clear reminder that:
-> Basic cyber hygiene, monitoring, and governance are often enough to prevent catastrophic incidents.
+**Key learning:**  
+> Most catastrophic breaches are preventable with basic monitoring, governance, and secure configuration.
 
 ---
 
 ## 9. Business Impact
 
-- **Bankruptcy (2021)** of the company
-- **Conviction of the CEO** for privacy-related offences
-- **Administrative fine** under GDPR
-- Long-term reputational damage
-- Thousands of individuals affected by identity theft risks and exposure of deeply personal psychotherapy notes
+- **Bankruptcy (2021)**  
+- **CEO convicted (2023)**  
+- **608 000€ GDPR fine**  
+- Long-term reputational and financial damage  
+- 33,000+ victims exposed to severe privacy harm  
 
 ---
 
-## 10. Repository Structure
+## 10. Contact
 
-```text
-vastaamo-incident-postmortem/
-├── README.md
-├── diagrams/
-│   ├── attack-path.md
-│   ├── timeline.md
-│   └── dwell-time.md
-├── mitre/
-│   └── mitre-mapping.md
-├── lessons-learned/
-│   └── defensive-controls.md
-├── assets/
-│   ├── banner_placeholder.png
-│   └── diagram_placeholder.png
-└── docs/
-    └── index.html
-```
+**Satu Ikola**  
+GitHub: https://github.com/SatuIkola  
+LinkedIn: https://www.linkedin.com/in/satu-ikola
 
 ---
 
-## 11. Sources
-
-This case study is based on public reporting, legal documents, and educational material used in a cybersecurity course.  
-The focus of this repository is on **technical and organisational lessons learned** for SOC and Blue Team work.
