@@ -2,6 +2,21 @@
 **🌐 Languages:**  
 🇬🇧 English | 🇫🇮 [Suomi](README.fi.md)
 
+## 📘 Table of Contents
+
+1. [Executive Summary](#1-executive-summary)  
+2. [Timeline of Events](#2-timeline-of-events)  
+3. [Root Cause Analysis (RCA)](#3-root-cause-analysis-rca)  
+4. [MITRE ATTCK Mapping](#4-mitre-attck-mapping)  
+5. [Attack Path Diagram](#5-attack-path-diagram)  
+6. [Defensive Failures](#6-defensive-failures)  
+7. [Recommended Technical Controls](#7-recommended-technical-controls)  
+8. [SOC & Blue Team Lessons Learned](#8-soc--blue-team-lessons-learned)  
+9. [Business Impact](#9-business-impact)  
+10. [Current Status (2025–2026)](#10-current-status-20252026)  
+11. [Contact](#11-contact)  
+
+
 # Vastaamo Data Breach — Incident Post-Mortem Report  
 ### Technical Case Study — Satu Ikola  
 *(Updated to reflect legal and investigative developments through 2026)*
