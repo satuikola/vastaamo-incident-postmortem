@@ -2,7 +2,9 @@
 # Vastaamo Breach — Incident Post-Mortem Report  
 ### A Technical Case Study by Satu Ikola
 
----
+**🌐 Languages:**  
+🇬🇧 English | 🇫🇮 [Suomi](README.fi.md)
+
 
 ### **Topics:**  
 MySQL · Incident Response · Blue Team · SOC · Microsoft Sentinel · Microsoft Defender XDR · MITRE ATT&CK · Data Exfiltration · Threat Hunting · GDPR · Ransomware · Cybersecurity Governance
