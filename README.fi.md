@@ -4,6 +4,21 @@
 **🌐 Kieliversiot:**
 🇫🇮 Suomi | 🇬🇧 [English](README.md)
 
+## 📘 Sisällysluettelo
+
+1. [Yhteenveto](#1-yhteenveto)
+2. [Tapahtumien aikajana](#2-tapahtumien-aikajana)
+3. [Root Cause Analysis (RCA)](#3-root-cause-analysis-rca)
+4. [MITRE ATTCK-kartoitus](#4-mitre-attck-kartoitus)
+5. [Hyökkäyspolun kaavio](#5-hyökkäyspolun-kaavio)
+6. [Missä puolustus petti](#6-missä-puolustus-petti)
+7. [Suositellut tekniset kontrollit](#7-suositellut-tekniset-kontrollit)
+8. [Opit SOC- ja Blue Team -näkökulmasta](#8-opit-soc--ja-blue-team--näkökulmasta)
+9. [Liiketoimintavaikutukset](#9-liiketoimintavaikutukset)
+10. [Ajankohtainen tilanne (2025–2026)](#10-ajankohtainen-tilanne-20252026)
+11. [Yhteystiedot](#11-yhteystiedot)
+
+
 ---
 
 ### Aiheita:  
