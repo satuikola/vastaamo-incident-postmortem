@@ -45,12 +45,12 @@
 The Vastaamo breach (2017–2020) is one of the most severe privacy incidents in Finland’s history.  
 A publicly exposed MySQL database, passwordless administrative accounts, lack of monitoring, and unencrypted psychotherapy notes enabled attackers to access, exfiltrate, and eventually leak sensitive data of **over 33,000 patients**.
 
-**Key consequences:**
-- **Bankruptcy** of the company (2021)  
-- **608,000 € GDPR fine**  
-- Direct blackmail attempts against patients  
-- CEO convicted of data protection crimes  
-- Attacker sentenced to **6 years 3 months** (pending final appellate ruling in 2026)
+**Key outcomes:**
+- Company bankruptcy (2021)
+- €608,000 GDPR administrative fine
+- Direct extortion attempts targeting patients
+- Former CEO data protection crime charge: district court conviction was overturned by the Court of Appeal (2025)
+- Helsinki Court of Appeal sentenced Aleksanteri Kivimäki (26 Feb 2026) to 6 years and 11 months of imprisonment (not legally final)
 
 This report analyzes the breach from a SOC / Blue Team perspective, provides a MITRE ATT&CK mapping, highlights defensive failures, and documents current legal developments.
 
@@ -82,8 +82,15 @@ Two days later, the database is wiped and a ransom note appears demanding crypto
 - Full database is published on the dark web  
 - Individual patients are directly targeted and blackmailed  
 
-### **2023–2024 — Arrest and sentencing**
-Attacker arrested and sentenced to **6 years 3 months** imprisonment.
+### 2024-04 - District Court sentence
+Länsi-Uusimaa District Court sentenced Aleksanteri Kivimäki to 6 years and 3 months of imprisonment.
+
+### 2025-09 - Released to await the Court of Appeal judgment
+Kivimäki was released from pre-trial detention to await the Court of Appeal decision.
+
+### 2026-02-26 - Court of Appeal judgment
+Helsinki Court of Appeal increased the sentence to 6 years and 11 months.
+The judgment is not legally final, and leave to appeal to the Supreme Court may be sought.
 
 ---
 
@@ -207,22 +214,24 @@ No documentation, no ownership, no review process.
 
 ## **9. Business Impact**
 
-- **Bankruptcy (2021)**  
-- **608,000 € GDPR fine**  
-- CEO convicted of data protection crimes  
-- Over 33,000 victims exposed to privacy and identity theft risks  
-- Severe long-term reputational and financial damage  
+- Bankruptcy (2021)
+- €608,000 GDPR administrative fine
+- Former CEO data protection crime charge: district court conviction was overturned by the Court of Appeal (2025)
+- Over 33,000 victims were exposed to identity theft and severe privacy risks
+- Long-term reputational and trust damage
 
 ---
 
-## **10. Current Status (2025–2026)**
+## 10. Current status (2025-2026)
 
-### 🔎 Key developments
-- **Patrick Newhard (USA)** charged for sending Vastaamo-related extortion emails  
-- **Aleksanteri Kivimäki** released from custody pending appeal (September 2025)  
-- **Court of Appeal ruling expected by 28 February 2026**  
-- Victim compensation process ongoing via State Treasury  
-- Investigators exploring possible additional collaborators  
+### Key recent developments
+
+- Helsinki Court of Appeal sentenced Aleksanteri Kivimäki to 6 years and 11 months of imprisonment for the Vastaamo data breach and extortion. The judgment is not legally final, and leave to appeal to the Supreme Court may be sought.
+- The Court of Appeal considered the statutory maximum (7 years) as the baseline, but reduced the sentence due to settlement agreements.
+- According to the Court of Appeal, settlement agreements have been made or are being made with around 6,000 victims. In addition, around 2,000 compensation claims have been filed with the district court.
+- Kivimäki was released from pre-trial detention in September 2025 to await the Court of Appeal judgment.
+
+_Source: Yle 26 Feb 2026, https://yle.fi/a/74-20211792. Updated: 26 Feb 2026_
 
 ---
 
