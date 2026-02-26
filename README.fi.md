@@ -33,11 +33,11 @@ Vastaamon tietomurto (2017–2020) on yksi Suomen vakavimmista yksityisyyteen ko
 Julkisesti avoinna ollut MySQL-tietokanta, salasanattomat ylläpitotunnukset, puutteellinen valvonta ja salaamattomat terapiamerkinnät mahdollistivat hyökkääjälle pääsyn yli **33 000 potilaan** arkaluonteisiin tietoihin.
 
 **Keskeiset seuraukset:**
-- Yrityksen **konkurssi (2021)**
-- **608 000 € GDPR-sakko**
+- Yrityksen konkurssi (2021)
+- 608 000 € GDPR-sakko
 - Suorat kiristysyritykset potilaita kohtaan
-- Toimitusjohtajan tuomio tietosuojarikkomuksista
-- Hyökkääjän  **6 vuoden 3 kuukauden** vankeustuomio (hovioikeuden lopullinen ratkaisu tulossa 2026)
+- Entisen toimitusjohtajan tietosuojarikossyyte, käräjäoikeuden tuomio kaatui hovioikeudessa (2025)
+- Helsingin hovioikeus tuomitsi Aleksanteri Kivimäen (26.2.2026) 6 vuoden ja 11 kuukauden vankeuteen (tuomio ei ole lainvoimainen)
 
 Tässä raportissa analysoidaan tapaus SOC- ja Blue Team -näkökulmasta, esitetään MITRE ATT&CK -kartoitus, tunnistetaan puolustuksen epäonnistumiset ja dokumentoidaan ajankohtaiset oikeudelliset tapahtumat.
 
@@ -69,8 +69,15 @@ Kaksi päivää myöhemmin tietokanta pyyhitään ja järjestelmään jätetää
 - Koko tietokanta julkaistaan pimeässä verkossa  
 - Yksittäisiä potilaita kiristetään suoraan  
 
-### **2023–2024 — Pidätys ja tuomio**
-Hyökkääjä pidätetään ja tuomitaan **6 vuoden 3 kuukauden** vankeuteen.
+### 2024-04 – Käräjäoikeuden tuomio
+Länsi-Uudenmaan käräjäoikeus tuomitsi Aleksanteri Kivimäen 6 vuoden ja 3 kuukauden vankeuteen.
+
+### 2025-09 – Vapautuu odottamaan hovioikeuden ratkaisua
+Kivimäki vapautui tutkintavankeudesta odottamaan hovioikeuden tuomiota vapaalle jalalle.
+
+### 2026-02-26 – Hovioikeuden tuomio
+Helsingin hovioikeus korotti rangaistuksen 6 vuoteen ja 11 kuukauteen.
+Tuomio ei ole lainvoimainen, ja siitä voi hakea valituslupaa korkeimmalta oikeudelta.
 
 ---
 
@@ -207,12 +214,11 @@ Ei dokumentointia, ei vastuuhenkilöä, ei tarkistuksia.
 
 ### 🔎 Keskeiset uudet käänteet
 
-- **Patrick Newhard (USA)** syytetty Vastaamoa koskevien kiristysviestien lähettämisestä  
-- **Aleksanteri Kivimäki** vapautettu tutkintavankeudesta odottamaan hovioikeuden päätöstä (syyskuu 2025)  
-- **Hovioikeuden lopullinen tuomio annetaan 28.2.2026 mennessä**  
-- Valtiokonttori käsittelee edelleen uhrien korvausvaatimuksia  
-- Tutkinta viittaa mahdollisiin lisäosallisiin kiristysvaiheessa  
-
+- Helsingin hovioikeus tuomitsi Aleksanteri Kivimäen 6 vuoden ja 11 kuukauden vankeuteen Vastaamon tietomurrosta ja kiristyksistä. Tuomio ei ole lainvoimainen ja valituslupa korkeimpaan        oikeuteen on mahdollinen.
+- Hovioikeus piti lähtökohtaisesti oikeudenmukaisena rangaistuksena enimmäisrangaistusta (7 vuotta), mutta lievensi rangaistusta sovintosopimusten vuoksi.
+- Sovintosopimuksia on hovioikeuden mukaan tehty tai tekemässä noin 6 000 uhrin kanssa. Lisäksi käräjäoikeuteen on saapunut noin 2 000 korvausvaatimusta.
+- Kivimäki vapautui syyskuussa 2025 tutkintavankeudesta odottamaan hovioikeuden tuomiota vapaalle jalalle.
+_Lähde: Yle 26.2.2026, https://yle.fi/a/74-20211792. Päivitetty: 26.2.2026_
 ---
 
 ## **11. Yhteystiedot**
