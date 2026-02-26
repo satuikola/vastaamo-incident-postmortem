@@ -233,6 +233,7 @@ No documentation, no ownership, no review process.
 
 _Source: Yle 26 Feb 2026 (Court of Appeal judgment), https://yle.fi/a/74-20211792;  
 Yle 18 Dec 2025 (former CEO charge overturned), https://yle.fi/a/74-20200364. Updated: 26 Feb 2026_
+
 ---
 
 ## **11. Contact**
