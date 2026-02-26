@@ -4,17 +4,17 @@
 
 ## 📘 Table of Contents
 
-1. [Executive Summary](#1-executive-summary)  
-2. [Timeline of Events](#2-timeline-of-events)  
-3. [Root Cause Analysis (RCA)](#3-root-cause-analysis-rca)  
-4. [MITRE ATTCK Mapping](#4-mitre-attck-mapping)  
-5. [Attack Path Diagram](#5-attack-path-diagram)  
-6. [Defensive Failures](#6-defensive-failures)  
-7. [Recommended Technical Controls](#7-recommended-technical-controls)  
-8. [SOC & Blue Team Lessons Learned](#8-soc--blue-team-lessons-learned)  
-9. [Business Impact](#9-business-impact)  
-10. [Current Status (2025–2026)](#10-current-status-20252026)  
-11. [Contact](#11-contact)  
+1. [Executive Summary](#1-executive-summary)
+2. [Timeline of Events](#2-timeline-of-events)
+3. [Root Cause Analysis (RCA)](#3-root-cause-analysis-rca)
+4. [MITRE ATTCK Mapping](#4-mitre-attck-mapping)
+5. [Attack Path Diagram](#5-attack-path-diagram)
+6. [Defensive Failures](#6-defensive-failures)
+7. [Recommended Technical Controls](#7-recommended-technical-controls)
+8. [SOC & Blue Team Lessons Learned](#8-soc--blue-team-lessons-learned)
+9. [Business Impact](#9-business-impact)
+10. [Current Status (2025–2026)](#10-current-status-2025-2026)
+11. [Contact](#11-contact)
 
 
 # Vastaamo Data Breach — Incident Post-Mortem Report  
@@ -231,8 +231,8 @@ No documentation, no ownership, no review process.
 - According to the Court of Appeal, settlement agreements have been made or are being made with around 6,000 victims. In addition, around 2,000 compensation claims have been filed with the district court.
 - Kivimäki was released from pre-trial detention in September 2025 to await the Court of Appeal judgment.
 
-_Source: Yle 26 Feb 2026, https://yle.fi/a/74-20211792. Updated: 26 Feb 2026_
-
+_Source: Yle 26 Feb 2026 (Court of Appeal judgment), https://yle.fi/a/74-20211792;  
+Yle 18 Dec 2025 (former CEO charge overturned), https://yle.fi/a/74-20200364. Updated: 26 Feb 2026_
 ---
 
 ## **11. Contact**
