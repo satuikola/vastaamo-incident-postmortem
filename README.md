@@ -231,10 +231,8 @@ No documentation, no ownership, no review process.
 - According to the Court of Appeal, settlement agreements have been made or are being made with around 6,000 victims. In addition, around 2,000 compensation claims have been filed with the district court.
 - Kivimäki was released from pre-trial detention in September 2025 to await the Court of Appeal judgment.
 
-_Source: Yle 26 Feb 2026 (Court of Appeal judgment), https://yle.fi/a/74-20211792;  
-Yle 18 Dec 2025 (former CEO charge overturned), https://yle.fi/a/74-20200364. Updated: 26 Feb 2026_
-
----
+Source: Yle 26 Feb 2026 (Court of Appeal judgment), [yle.fi/a/74-20211792](https://yle.fi/a/74-20211792);  
+Yle 18 Dec 2025 (former CEO charge overturned), [yle.fi/a/74-20200364](https://yle.fi/a/74-20200364). Updated: 26 Feb 2026
 
 ## **11. Contact**
 
