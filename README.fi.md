@@ -15,7 +15,7 @@
 7. [Suositellut tekniset kontrollit](#7-suositellut-tekniset-kontrollit)
 8. [Opit SOC- ja Blue Team -näkökulmasta](#8-opit-soc--ja-blue-team--näkökulmasta)
 9. [Liiketoimintavaikutukset](#9-liiketoimintavaikutukset)
-10. [Ajankohtainen tilanne (2025–2026)](#10-ajankohtainen-tilanne-20252026)
+10. [Ajankohtaista (2025–2026)](#10-ajankohtaista-20252026)
 11. [Yhteystiedot](#11-yhteystiedot)
 
 
@@ -196,17 +196,17 @@ Ei dokumentointia, ei vastuuhenkilöä, ei tarkistuksia.
 - Epäilyttävät prosessit ja takaportit  
 - Ristiinkorrelaatiot identiteetti-, verkko- ja päätelaitesignaaleista  
 
-> **Keskeinen oppi:** Suurin osa vakavista tietomurroista olisi estettävissä peruskontrolleilla — turvallinen konfiguraatio, toimiva IAM, valvonta ja selkeä governance.
+> **Keskeinen oppi:** Suurin osa vakavista tietomurroista olisi estettävissä peruskontrolleilla: turvallinen konfiguraatio, toimiva IAM, valvonta ja selkeä governance.
 
 ---
 
 ## **9. Liiketoimintavaikutukset**
 
-- **Konkurssi (2021)**  
-- **608 000 € GDPR-sakko**  
-- Toimitusjohtajan tuomio tietosuojarikoksista  
-- 33 000+ uhria altistui identiteettivarkauksien ja yksityisyysriskien kohteeksi  
-- Pitkäkestoinen maine- ja luottamustappio  
+- Konkurssi (2021)
+- 608 000 € GDPR-sakko
+- Entisen toimitusjohtajan tietosuojarikossyyte, käräjäoikeuden tuomio kaatui hovioikeudessa (2025)
+- Yli 33 000 uhria altistui identiteettivarkauksien ja yksityisyysriskien kohteeksi
+- Pitkäkestoinen maine- ja luottamustappio
 
 ---
 
@@ -214,11 +214,13 @@ Ei dokumentointia, ei vastuuhenkilöä, ei tarkistuksia.
 
 ### 🔎 Keskeiset uudet käänteet
 
-- Helsingin hovioikeus tuomitsi Aleksanteri Kivimäen 6 vuoden ja 11 kuukauden vankeuteen Vastaamon tietomurrosta ja kiristyksistä. Tuomio ei ole lainvoimainen ja valituslupa korkeimpaan        oikeuteen on mahdollinen.
+- Helsingin hovioikeus tuomitsi Aleksanteri Kivimäen 6 vuoden ja 11 kuukauden vankeuteen Vastaamon tietomurrosta ja kiristyksistä. Tuomio ei ole lainvoimainen ja valituslupa korkeimpaan oikeuteen on mahdollinen.
 - Hovioikeus piti lähtökohtaisesti oikeudenmukaisena rangaistuksena enimmäisrangaistusta (7 vuotta), mutta lievensi rangaistusta sovintosopimusten vuoksi.
 - Sovintosopimuksia on hovioikeuden mukaan tehty tai tekemässä noin 6 000 uhrin kanssa. Lisäksi käräjäoikeuteen on saapunut noin 2 000 korvausvaatimusta.
 - Kivimäki vapautui syyskuussa 2025 tutkintavankeudesta odottamaan hovioikeuden tuomiota vapaalle jalalle.
+
 _Lähde: Yle 26.2.2026, https://yle.fi/a/74-20211792. Päivitetty: 26.2.2026_
+
 ---
 
 ## **11. Yhteystiedot**
